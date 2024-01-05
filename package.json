@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "yarn codegen",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "watch-schema": "watch 'yarn codegen' ./graphql/queries",
     "dev": "concurrently --kill-others \"yarn watch-schema\" \"next dev\"",
     "build": "next build",
     "start": "next start",
