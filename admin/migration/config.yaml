@@ -1,6 +1,6 @@
 version: 3
-endpoint: <yourhasuraendpoint.fly.dev>
-admin_secret: <hasura secret>
+endpoint: https://avse-hasura-prod.fly.dev
+admin_secret: admin
 metadata_directory: metadata
 actions:
   kind: synchronous
